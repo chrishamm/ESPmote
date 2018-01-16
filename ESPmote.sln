@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESPmote.Android", "ESPmote\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESPmote.UWP", "ESPmote\ESPmote.UWP\ESPmote.UWP.csproj", "{B8587940-75A6-42A9-82E1-9276D5439129}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESPmote", "ESPmote\ESPmote\ESPmote.csproj", "{8DF3CD2E-759F-421B-A4EA-E55E5112CD35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESPmote", "ESPmote\ESPmote\ESPmote.csproj", "{8DF3CD2E-759F-421B-A4EA-E55E5112CD35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

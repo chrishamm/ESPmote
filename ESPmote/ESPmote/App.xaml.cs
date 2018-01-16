@@ -13,7 +13,7 @@ namespace ESPmote
 		{
 			InitializeComponent();
 
-			MainPage = new ESPmote.MainPage();
+			MainPage = new Startseite();
 		}
 
 		protected override void OnStart ()
