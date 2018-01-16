@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace ESPmote
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Fernbedienungsseite : ContentPage
+	public  partial class Fernbedienungsseite : ContentPage
 	{
 		public Fernbedienungsseite ()
 		{

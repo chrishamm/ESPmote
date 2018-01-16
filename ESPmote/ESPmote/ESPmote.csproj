@@ -12,25 +12,25 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
-    <Compile Update="TeachInPage.xaml.cs">
-      <DependentUpon>TeachInPage.xaml</DependentUpon>
+    <Compile Update="Einlernseite.xaml.cs">
+      <DependentUpon>Einlernseite.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Remotepage.xaml.cs">
-      <DependentUpon>Remotepage.xaml</DependentUpon>
+    <Compile Update="Fernbedienungsseite.xaml.cs">
+      <DependentUpon>Fernbedienungsseite.xaml</DependentUpon>
     </Compile>
-    <Compile Update="StartPage.xaml.cs">
-      <DependentUpon>StartPage.xaml</DependentUpon>
+    <Compile Update="Startseite.xaml.cs">
+      <DependentUpon>Startseite.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="TeachInPage.xaml">
+    <EmbeddedResource Update="Einlernseite.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Remotepage.xaml">
+    <EmbeddedResource Update="Fernbedienungsseite.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="StartPage.xaml">
+    <EmbeddedResource Update="Startseite.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

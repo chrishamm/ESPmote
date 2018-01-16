@@ -4,7 +4,7 @@
              x:Class="ESPmote.Fernbedienungsseite">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="hier kommt die fernbedienungsseite hin"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

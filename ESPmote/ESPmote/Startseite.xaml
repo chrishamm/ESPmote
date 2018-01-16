@@ -3,12 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ESPmote.Startseite">
     <ContentPage.Content>
-        <StackLayout x:Name="hauptlayout">
-            <Label Text="ESPMote"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            
-            
-        </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>
