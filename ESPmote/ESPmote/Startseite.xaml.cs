@@ -10,41 +10,33 @@ using Xamarin.Forms.Xaml;
 
 namespace ESPmote
 {
-
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Startseite : ContentPage
     {
-
-
-
         public Startseite()
         {
             InitializeComponent();
             button_list(dummy_list());
         }
 
-
-
         public void button_list(List<string> remotelist) // erzeugt aus der fernbedienungsliste buttons und fügt diese ein
         {
             var command_fernbedienungsseite = new Command(clicked_fernbedienungsseite);
-            var command_einlernseite= new Command(clicked_einlernseite);
+            var command_einlernseite = new Command(clicked_einlernseite);
 
             StackLayout layout = new StackLayout();
 
-                 foreach (string elem in remotelist)
-                 {
-                     layout.Children.Add(new Button{Text = elem,  HorizontalOptions = LayoutOptions.Start, Command = command_fernbedienungsseite});
-                 }
+            foreach (string elem in remotelist)
+            {
+                layout.Children.Add(new Button { Text = elem, HorizontalOptions = LayoutOptions.Start, Command = command_fernbedienungsseite });
+            }
 
-                 layout.Children.Add(new Button { Text = "Einlernen", HorizontalOptions = LayoutOptions.Start, Command = command_einlernseite });
+            layout.Children.Add(new Button { Text = "Einlernen", HorizontalOptions = LayoutOptions.Start, Command = command_einlernseite });
 
             Content = layout;
-
-            
         }
-        
-       
+
+
         public List<string> dummy_list() // wird später ersetzt
         {
             List<string> remote_dummies  = new List<string>();
@@ -53,16 +45,17 @@ namespace ESPmote
             
             return remote_dummies;
         }
+
  #region Events
         public async void clicked_fernbedienungsseite()
         {
-            await Navigation.PushAsync(new ESPmote.Fernbedienungsseite());
+            await Navigation.PushAsync(new Fernbedienungsseite());
 
         }
+
         public async void clicked_einlernseite()
         {
-            await Navigation.PushAsync(new ESPmote.Einlernseite());
-
+            await Navigation.PushAsync(new .Einlernseite());
         }
 #endregion
     }
