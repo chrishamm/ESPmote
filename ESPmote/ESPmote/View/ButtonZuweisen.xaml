@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESPmote.View.ButtonZuweisen"
+             Title="Button zuweisen">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="15">
+            <Label Text="Beschriftung:" />
+            <Entry Text="{Binding Beschriftung}" />
+            <Button IsEnabled="{Binding CodeKannEingelesenWerden}" Text="Code einlesen"  Clicked="CodeEinlesenClicked" />
+            <ActivityIndicator IsVisible="{Binding CodeWirdEingelesen}" IsRunning="True" />
+            <Label TextColor="{Binding EinleseStatusColor}" Text="{Binding EinleseStatusText}" />
+            <Button Text="Button zuweisen" IsEnabled="{Binding EingabenOK}" Clicked="ButtonUebernehmen" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

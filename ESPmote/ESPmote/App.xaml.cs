@@ -9,12 +9,24 @@ namespace ESPmote
 {
 	public partial class App : Application
 	{
+        private static Model.Datenbank datenbank;
+        public static Model.Datenbank Datenbank
+        {
+            get
+            {
+                if (datenbank == null)
+                {
+                    datenbank = new Model.Datenbank(DependencyService.Get<IFileHelper>().GetLocalFilePath("espmote.db"));
+                }
+                return datenbank;
+            }
+        }
+
 		public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new NavigationPage(new Startseite());
-		}
+            MainPage = new NavigationPage(new View.Einrichtungsseite());
+        }
 
 		protected override void OnStart ()
 		{

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESPmote.View.Einrichtungsseite"
+             Title="ESPmote">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="15">
+            <Label Text="Bitte konfigurieren Sie den ESP8266 per Konsole und geben Sie anschließend die IP-Adresse des Geräts ein:" />
+            <Entry IsEnabled="{Binding IsIdle}" Text="{Binding IP}" />
+            <Button IsEnabled="{Binding IsIdle}" Text="Verbinden" Clicked="ConnectClicked" />
+            <Label Text="{Binding ErrorMessage}" IsVisible="{Binding IsIdle}" TextColor="Red" />
+            <ActivityIndicator IsVisible="{Binding IsConnecting}" IsRunning="True" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

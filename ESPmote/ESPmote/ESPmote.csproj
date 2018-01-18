@@ -13,25 +13,31 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Einlernseite.xaml.cs">
-      <DependentUpon>Einlernseite.xaml</DependentUpon>
+    <Compile Update="View\ButtonZuweisen.xaml.cs">
+      <DependentUpon>ButtonZuweisen.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Fernbedienungsseite.xaml.cs">
+    <Compile Update="View\Fernbedienungsliste.xaml.cs">
+      <DependentUpon>Fernbedienungsliste.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\Fernbedienungsseite.xaml.cs">
       <DependentUpon>Fernbedienungsseite.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Startseite.xaml.cs">
-      <DependentUpon>Startseite.xaml</DependentUpon>
+    <Compile Update="View\Einrichtungsseite.xaml.cs">
+      <DependentUpon>Einrichtungsseite.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Einlernseite.xaml">
+    <EmbeddedResource Update="View\ButtonZuweisen.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Fernbedienungsseite.xaml">
+    <EmbeddedResource Update="View\Fernbedienungsliste.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Startseite.xaml">
+    <EmbeddedResource Update="View\Fernbedienungsseite.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Einrichtungsseite.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
