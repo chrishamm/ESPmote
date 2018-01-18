@@ -25,12 +25,15 @@ namespace ESPmote
             var command_einlernseite = new Command(clicked_einlernseite);
 
             StackLayout layout = new StackLayout();
-
+            int i = 0;
             foreach (string elem in remotelist)
             {
-                layout.Children.Add(new Button { Text = elem, HorizontalOptions = LayoutOptions.Start, Command = command_fernbedienungsseite });
+                
+                
+                layout.Children.Add(new Button { Text = elem, HorizontalOptions = LayoutOptions.Start, Command = command_fernbedienungsseite,  });
+                i++;
             }
-
+            i = 0;
             layout.Children.Add(new Button { Text = "Einlernen", HorizontalOptions = LayoutOptions.Start, Command = command_einlernseite });
 
             Content = layout;
@@ -48,14 +51,14 @@ namespace ESPmote
 
  #region Events
         public async void clicked_fernbedienungsseite()
-        {
+        {   
             await Navigation.PushAsync(new Fernbedienungsseite());
-
+            
         }
 
         public async void clicked_einlernseite()
         {
-            await Navigation.PushAsync(new .Einlernseite());
+            await Navigation.PushAsync(new Einlernseite());
         }
 #endregion
     }
